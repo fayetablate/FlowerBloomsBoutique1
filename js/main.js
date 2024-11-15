@@ -114,4 +114,16 @@ orderForm.addEventListener('submit', function (e) {
     const confirmationModal = new bootstrap.Modal(document.getElementById('orderConfirmationModal'));
     confirmationModal.show();
 });
+$('#videoModal').on('show.bs.modal', function (e) {
+    var button = $(e.relatedTarget); // Button that triggered the modal
+    var videoSrc = button.data('src'); // Get video src from the button's data-src attribute
+    var modal = $(this);
+    modal.find('iframe').attr('src', videoSrc);
+});
+
+// This script resets the iframe src to an empty string when the modal is closed
+$('#videoModal').on('hidden.bs.modal', function (e) {
+    var modal = $(this);
+    modal.find('iframe').attr('src', '');
+});
 

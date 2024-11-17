@@ -94,12 +94,32 @@
                 <h1 class="display-1 text-uppercase text-white mb-4">Flower Blooms Boutique</h1>
                 <h1 class="text-uppercase text-white">Where every bloom tells a story.</h1>
                 <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                    <button type="button" class="btn-play" data-bs-toggle="modal" data-bs-target="#videoModal" data-src="https://www.youtube.com/embed/_TvQULamjuFo?si=XuuDHvS0QWHbC3TJ">
+                    <!-- "Promotion Poster" Button for Image Modal -->
+                    <button type="button" class="btn btn-primary border-inner py-3 px-5 me-5" data-bs-toggle="modal" data-bs-target="#imageModal">
+                        Promotion Poster
+                    </button>
+
+                    <!-- "Play Video" Button -->
+                    <button type="button" class="btn-play" data-bs-toggle="modal" data-bs-target="#videoModal" data-src="https://www.youtube.com/embed/_TvQULamjuFo?si=H3tgdtAE5QZe7EEA">
                         <span></span>
                     </button>
-                    <h5 class="font-weight-normal text-white m-0 ms-4 d-none d-sm-block">Play Video</h5>
+                    <h5 class="font-weight-normal text-white m-0 ms-4 d-none d-sm-block">Play Add Video</h5>
                 </div>
-                
+
+                <!-- Image Modal -->
+                <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="img/Poster.png" alt="Flower Bloom Image" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Video Modal -->
                 <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
@@ -108,7 +128,7 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <iframe width="100%" height="400" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                <iframe id="videoIframe" width="100%" height="400" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
@@ -118,19 +138,6 @@
     </div>
 </div>
 <!-- Hero End -->
-
-<!-- Video Modal -->
-<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-body">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                <iframe id="videoIframe" width="100%" height="400px" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
-        </div>
-    </div>
-</div>
-
 
     <!-- About Start -->
     <div class="container-fluid pt-5">
